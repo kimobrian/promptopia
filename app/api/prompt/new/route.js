@@ -14,6 +14,6 @@ export const POST = async (req, res) => {
     await newPrompt.save()
     return new Response(JSON.stringify(newPrompt, { status: 201}))
   } catch (error) {
-    return new Response("Filed to create a bew response", { status: 500 })
+    return new Response("Filed to create a new response", { status: 500 })
   }
 }
