@@ -1,5 +1,5 @@
-import React from "react";
-import Link from "next/link";
+import React from 'react'
+import Link from 'next/link'
 
 export const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
   return (
@@ -8,7 +8,7 @@ export const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
         <span className="blue_gradient">{type} Post</span>
       </h1>
       <p className="desc text-left max-w-md">
-        {type} and share amazing prompts witj the world, and let your
+        {type} and share amazing prompts with the world, and let your
         imagination run wild with anuy AI platform
       </p>
       <form
@@ -30,7 +30,9 @@ export const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
         <label>
           <span className="font-satoshi font-semibold text-base text-gray-700">
             Tag
-            <span className="font-normal">(#product, #idea, #webdevelopment)</span>
+            <span className="font-normal">
+              (#product, #idea, #webdevelopment)
+            </span>
           </span>
           <input
             placeholder="#tag"
@@ -54,5 +56,5 @@ export const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
         </div>
       </form>
     </section>
-  );
-};
+  )
+}
